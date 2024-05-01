@@ -1,28 +1,36 @@
-const startButton = document.getElementById('start-btn')
-const questionContainerElement = document.getElementById('question-container')
+const startButton = document.getElementById("start-btn");
+const questionContainerElement = document.getElementById("question-container");
 
-const shuffledQuestions, currentQuestionsIndex 
+let shuffledQuestions, currentQuestionIndex; // Use 'let' instead of 'const' since you'll be assigning values later
 
-startButton.addEventListener('click', startGame)
+startButton.addEventListener("click", startGame);
 
 function startGame() {
-    console.log('Started')
-    startButton.classList.add('hide')
-    shuffledQuestions = questions.sort(() => Math.random()- .5)
-    currentQuestionIndex - 0
-    questionContainerElement.classList.remove('hide')
-    seeNextQuestion()
+  console.log("Started");
+  startButton.classList.add("hide");
+  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+  currentQuestionIndex = 0; // Fix the typo here
+  questionContainerElement.classList.remove("hide");
+  seeNextQuestion();
 }
-// start button is working however, not sure why there's an uncaught syntac error for the first line 
 
-function setNextQuestion 
+// Define the missing part of the function
+function setNextQuestion() {
+  // Implement the logic to set the next question
+}
 
-const question = [
-    question: 'What is HTML',
+// Define the 'questions' array
+const questions = [
+  {
+    question: "What is HTML",
     answers: [
-        { text: 'standard markup language for creating Web pages', correct: false},
-        { text: 'Hypertext Markup Language', correct: false},
-        { text: 'Describes the structure of a web page', correct: false},
-        { text: 'All of the above', correct: true}
-    ]
-]
+      {
+        text: "standard markup language for creating Web pages",
+        correct: false,
+      },
+      { text: "Hypertext Markup Language", correct: false },
+      { text: "Describes the structure of a web page", correct: false },
+      { text: "All of the above", correct: true },
+    ],
+  },
+];
