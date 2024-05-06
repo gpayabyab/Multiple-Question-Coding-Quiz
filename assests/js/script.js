@@ -9,7 +9,10 @@ const questions = [
   {
     question: "What is HTML",
     answers: [
-      { text: "standard markup language for creating Web pages", correct: false },
+      {
+        text: "standard markup language for creating Web pages",
+        correct: false,
+      },
       { text: "Hypertext Markup Language", correct: false },
       { text: "Describes the structure of a web page", correct: false },
       { text: "All of the above", correct: true },
@@ -36,7 +39,7 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
-  // Implement logic to display the question and its answers in your HTML
+
 }
 
 function resetState() {
