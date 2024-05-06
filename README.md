@@ -14,9 +14,6 @@ Please make sure to update tests as appropriate.
 # Tests
 n/a
 
-# Deployed Link
-https://gpayabyab.github.io/Weather-Dashboard/
-
 # Questions
 Email if you have any questions
 
